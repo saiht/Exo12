@@ -8,6 +8,7 @@
   display: block;
   height: 0;
   line-height: 0;
+  visibility: hidden;
 }
 * {
   box-sizing: border-box;
@@ -16,14 +17,15 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   margin: 0;
   padding: 0;
   color: #989898;
   background-image: url("../img/fond.png");
   font-family: "Bree Serif", cursive, arial;
+  line-height: 2;
 }
-header, main, footer {
+header, footer, main section:not(.bienvenue) {
   max-width: 1100px;
   margin: 0 auto;
 }
@@ -36,12 +38,18 @@ a {
 	text-decoration: none;
   color: #989898;
 }
+h1, h2, h3, h4, h5 {
+  font-weight: normal;
+}
+h3, h4, h5 {
+  color: #E4155D;
+}
 
 /**** End Surcharges ****/
 
 /**** Start Header ****/
 header {
-  height: 150px;
+  height: 180px;
 }
 header nav {
   display: flex;
@@ -51,6 +59,7 @@ header nav {
 header nav a {
   display: flex;
   flex-direction: row;
+  align-items: center;
   width: 50%;
   justify-content: flex-start;
 }
@@ -67,15 +76,73 @@ header nav ul {
   width: 50%;
 }
 header nav ul li {
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 header nav ul li span{
   display: block;
   text-align: center;
-  padding-bottom: 10px;
 }
 /**** End Header ****/
 
 /**** Start Main ****/
+/**** Start .Bienvenue ****/
+main .bienvenue {
+  text-align: center;
+  background-image: url("../img/bg_header.png");
+  background-position: top center;
+  width: 100%;
+  height: auto;
+  padding: 200px 50px;
+  color: white;
+}
+main .bienvenue h2 {
+  padding-bottom: 30px;
+  font-size: 2.5em;
+}
+main .bienvenue label button#decouvrezMoi {   /*Dégradé à faire sur button*/
+  background-color: #E4155D;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.7rem;
+  padding: 5px 15px;
+}
+/**** End .Bienvenue ****/
+
+/**** Start .skills ****/
+.skills {
+  text-align: center;
+}
+/* bla bla bla */
+
+/**** End .skills ****/
+
+/**** Start .realisation ****/
+main section.realisations {
+  text-align: center;
+}
+main section.realisations article.article_item {
+  width: 30%;
+  float: left;
+  margin-top: 10px;
+}
+main section.realisations article.article_item:nth-child(odd)  {
+  margin: 0 5%;
+}
+main section.realisations article.article_item i {
+  border: 2px rgba(152, 152, 152, 0.2) solid;
+  border-radius: 30px;
+  padding: 15px;
+  background-color: rgba(152, 152, 152, 0.1);
+}
+
+
+
+/**** End .realisation ****/
+
+
+
+
+
 
 /**** End Main ****/

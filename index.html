@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" media="screen">
 
+
+
   </head>
   <body>
     <header>
@@ -23,8 +25,58 @@
           </ul>
       </nav>
     </header>
+    <main>
+      <section class="bienvenue">
+        <h2>Bonjour et bienvenue sur mon portfolio</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Blabla bla sldkfj sdkflj sqdfkj qsdlkfj sdlfkjs fkjqs dlfqsjd flk.
+        </p>
+        <label for="decouvrezMoi">
+          <button id="decouvrezMoi" type="button" name="decouvrezMoi" value="">Découvrez-moi !</button>
+        </label>
+      </section>
+      <section class="skills" onload="draw();">
+        <h3>Mes compétences</h3>
+        <canvas id="canvas" width="300" height="300"></canvas>
+      </section>
+      <section class="realisations">
+        <h3>Mes réalisations</h3>
+        <article class="article_item">
+          <i class="fa fa-coffee" aria-hidden="true"></i>
+          <h3>On discute</h3>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+        </article>
+        <article class="article_item">
+          <i class="fa fa-flask" aria-hidden="true"></i>
+          <h3>On tente</h3>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+        </article>
+        <article class="article_item">
+          <i class="fa fa-code" aria-hidden="true"></i>
+          <h3>On code</h3>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+        </article>
+      </section>
+    </main>
 
 
 
+
+
+
+    <script type="text/javascript">
+      function draw() {
+        var canvas = document.querySelector('#canvas');
+        if (canvas.getContext) {
+          var ctx = canvas.getContext("2d");
+
+          ctx.fillStyle = "rgb(200,0,0)";
+          ctx.fillRect (10, 10, 55, 50);
+
+          ctx.fillStyle = "rgba(0, 0, 200, 0.5)";
+          ctx.fillRect (30, 30, 55, 50);
+        }
+      }
+    </script>
   </body>
 </html>
