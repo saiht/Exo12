@@ -28,6 +28,9 @@ header, footer, main section:not(.bienvenue) {
   max-width: 1100px;
   margin: 0 auto;
 }
+main {
+  margin: 0 auto;
+}
 ul {
 	margin: 0;
 	padding: 0;
@@ -62,6 +65,7 @@ section {
 /**** Start Header ****/
 header {
   height: 180px;
+  min-width: 540px;
 }
 header nav, header nav a {
   align-items: center;
@@ -104,6 +108,7 @@ main section.bienvenue {
   padding: 200px 50px;
   color: white;
 }
+
 main section.bienvenue h2 {
   padding-bottom: 30px;
   font-size: 2.5em;
@@ -206,4 +211,37 @@ main section form button[type="submit"] {
 }
 /**** End formulaire ****/
 
+.barre {
+  display: none;
+}
+.barre p {
+  border: 2px solid rgba(152, 152, 152, 0.8);
+  background: linear-gradient(to right, rgba(41,154,11,1) 0%,rgba(41,154,11,1) 85%,rgba(41,154,11,0.38) 95%,rgba(41,154,11,0.07) 100%);
+  border-radius: 15px;
+  padding: 10px;
+  color: #fff;
+
+}
 /**** END MAIN ****/
+
+/**** MEDIAS QUERIES ****/
+@media all and (max-width: 1024px)
+{
+  #skill {
+    display: none;
+  }
+  .barre {
+    display: block;
+  }
+  main section.bienvenue {
+    padding: 20px;
+  }
+  main section.realisations article.article_item {
+    width: 100%;
+    margin:0;
+  }
+  main section.realisations article.article_item:nth-child(odd) {
+    margin: 0;
+  }
+
+}
