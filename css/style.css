@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+
+/**** Start Surcharges ****/
+.clearfix::after {				/*Alternative au overflow:hidden, ou div clear*/
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  line-height: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.4rem;
+  margin: 0;
+  padding: 0;
+  color: #989898;
+  background-image: url("../img/fond.png");
+  font-family: "Bree Serif", cursive, arial;
+}
+header, main, footer {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a {
+	text-decoration: none;
+  color: #989898;
+}
+
+/**** End Surcharges ****/
+
+/**** Start Header ****/
+header {
+  height: 150px;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+header nav a {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  justify-content: flex-start;
+}
+header nav a h1 {
+  padding: 30px 10px;
+}
+header nav a img {
+  margin: 45px 10px;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 50%;
+}
+header nav ul li {
+  font-size: 1.6rem;
+}
+header nav ul li span{
+  display: block;
+  text-align: center;
+  padding-bottom: 10px;
+}
+/**** End Header ****/
+
+/**** Start Main ****/
+
+/**** End Main ****/
