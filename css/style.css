@@ -1,8 +1,6 @@
 @charset "UTF-8";
-
-
 /**** Start Surcharges ****/
-.clearfix::after {				/*Alternative au overflow:hidden, ou div clear*/
+.clearfix::after {
   clear: both;
   content: ".";
   display: block;
@@ -12,6 +10,7 @@
 }
 * {
   box-sizing: border-box;
+  outline: none;
 }
 html {
   font-size: 62.5%;
